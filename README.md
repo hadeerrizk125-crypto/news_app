@@ -1,16 +1,25 @@
-# news_app
+# News Cloud App 📰
 
-A new Flutter project.
+A dynamic news application built with **Flutter** that fetches and displays real-time news articles from a REST API. This project focuses on building a clean UI and managing asynchronous data fetching efficiently.
 
-## Getting Started
+## 🚀 Key Features
+*   **Live Headlines:** Fetches current news articles across multiple categories using the News API.
+*   **Web View Integration:** Integrated `webview_flutter` to allow users to read full articles without leaving the app.
+*   **Asynchronous Data Handling:** Efficiently manages API calls and loading states.
+*   **Custom UI Components:** A sleek, responsive design featuring category sliders and news tiles.
 
-This project is a starting point for a Flutter application.
+## 🏗 Technical Implementation
+This project emphasizes **clean code** and **modular design**:
+*   **FutureBuilder Integration:** Utilized `FutureBuilder` to handle asynchronous operations, ensuring a smooth transition between loading, error, and data-ready states.
+*   **Clean Architecture:** 
+    *   **Models:** Custom models to map JSON data into Dart objects.
+    *   **Services:** Separated API logic into a dedicated service layer for better maintainability.
+    *   **Widgets:** Extracted reusable UI elements (like `NewsTile` and `CategoriesListView`) to keep the codebase DRY and organized.
+*   **Dynamic UI:** Used `setState` for reactive UI updates within views.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Tech Stack
+*   **Framework:** Flutter
+*   **Language:** Dart
+*   **API:** NewsAPI.org
+*   **Core Concepts:** FutureBuilder, REST API Integration, Models & Services separation.
+*   **Key Packages:** `dio`, `webview_flutter`, `cached_network_image`.
