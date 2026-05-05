@@ -14,7 +14,7 @@ class NewsListView extends StatelessWidget {
         index,
       ) {
         return Padding(
-          padding: const EdgeInsets.only(bottom: 16),
+          padding: const EdgeInsets.only(bottom: 15),
           child: NewsTile(articalModel: articals[index]),
         );
       }),

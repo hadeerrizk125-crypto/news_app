@@ -58,7 +58,7 @@ class NewsListViewBuilder extends StatefulWidget {
 }
 
 class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
-  var future;
+  dynamic future;
   @override
   void initState() {
     super.initState();

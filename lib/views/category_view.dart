@@ -3,14 +3,25 @@ import 'package:news_app/widgets/news_listview_builder.dart';
 
 class CategoryView extends StatelessWidget {
   const CategoryView({super.key, required this.category});
-final String category;
+  final String category;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:CustomScrollView(
-        slivers: [
-          NewsListViewBuilder(category:category )
-        ],
+      appBar: AppBar(
+  title: Text(category),
+  leading: IconButton(
+    icon: Icon(Icons.arrow_back),
+    onPressed: () {
+      if (context.mounted)
+      {
+         Navigator.pop(context);
+         }
+     
+    },
+  ),
+),
+      body: CustomScrollView(
+        slivers: [NewsListViewBuilder(category: category)],
       ),
     );
   }
